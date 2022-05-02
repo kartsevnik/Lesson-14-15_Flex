@@ -1,0 +1,507 @@
+@import "null.css";
+@import "fonts.css";
+
+/* body */
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+.wrapper {
+    min-height: 100%;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Общие классы */
+[class*="__container"] {
+    margin: 0px auto;
+    max-width: 1020px;
+    padding: 0 15px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+}
+
+.subtitle_pink {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    position: relative;
+    padding-left: 30px;
+    color: #5D62B5;
+    text-transform: uppercase;
+}
+
+.subtitle_pink:before {
+    content: "";
+    background: url(../img/ico/overline-viola.png) 0 0 no-repeat;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+}
+
+.subtitle_white {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 30px;
+    position: relative;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.subtitle_white:before {
+    content: "";
+    background: url(../img/ico/overline-mark.png) 0 0 no-repeat;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+}
+
+[class*="subtitle"]:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.cards-title {
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #F2726F;
+}
+.cards-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+/* header */
+
+.header {
+    width: auto;
+    height: 800px;
+    /* padding-top: 800px; */
+}
+
+/* main content */
+
+.main {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+/* ================================== who-we-are  */
+
+.who-we-are {
+}
+
+.who-we-are__container {
+    position: relative;
+    padding: 100px 87px 300px 87px;
+    background-color: #5D62B5;
+    margin: -180px auto 54px auto;
+    border-radius: 40px;
+    color: #F5F5F5;
+}
+
+.who-we-are__container:after {
+    content: "";
+    position: absolute;
+    background: url(../img/main/who-we-are/blob2.png) 0 0 no-repeat;
+    bottom: -148px;
+    left: -15px;
+    width: 665px;
+    height: 591px;
+    object-fit: cover;
+}
+
+.who-we-are__container:before {
+    content: "";
+    position: absolute;
+    background: url(../img/main/who-we-are/circles.png) 0 0 no-repeat;
+    top: -109px;
+    right: -76px;
+    width: 201px;
+    height: 317px;
+}
+
+.who-we-are__subtitle {
+    margin-bottom: 33px;
+    position: relative;
+}
+
+.who-we-are__title {
+    max-width: 583px;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+}
+.who-we-are__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    padding-bottom: 54px;
+}
+
+.image-dog {
+    position: relative;
+    max-width: 846px;
+    border-radius: 40px;
+    margin: -350px auto 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 16px 24px 0px #26262633, 0px 8px 16px 0px #2626263d;
+    margin-bottom: 20px;
+}
+
+.image-dog__picture {
+    object-fit: cover;
+    width: 846px;
+    height: 420px;
+    max-width: 100%;
+    display: block;
+}
+
+/* ================================== our-promise-to-you  */
+
+.our-promise-to-you {
+}
+.our-promise-to-you__container {
+    padding: 80px 0 122px 0;
+}
+
+.our-promise-to-you__title {
+max-width: 583px;
+margin-bottom: 68px;
+}
+.our-promise-to-you__row {
+}
+
+/* ================================== row-love-care   */
+
+.row-love-care {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 1020px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    row-gap: 24px;
+}
+
+.row-love-care__title {
+    margin-bottom: 20px;
+}
+
+.row-love-care__love, .row-love-care__on-site,.row-love-care__live-stream {
+    position: relative;
+    flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 0 12px 0 92px;
+    margin: 0 auto;
+    min-width: 250px;
+} 
+
+.row-love-care__love:before {
+    content: "";
+    background: url(../img/main/row-love-care/dog_love_24x.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    }
+
+.row-love-care__on-site:before {
+    content: "";
+    background: url(../img/main/row-love-care/dog_vet_24x.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+.row-love-care__live-stream:before {
+    content: "";
+    background: url(../img/main/row-love-care/dog_stream_24x.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+    /* ================================== our-services   */
+
+.our-services {
+    padding: 110px 12px 120px 12px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.our-services::before {
+    content: "";
+    background: url(../img/main/cards-services/Blob-white.png) 0 0 no-repeat;
+    width: 610px;
+    height: 1312px;
+    position: absolute;
+    top: -490px;
+    right: 0px;
+}
+
+.our-services__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.our-services__subtitle {
+}
+.our-services__title {
+    max-width: 583px;
+    margin-bottom: 78px;
+}
+.our-services__cards {
+    margin: 0px -12px;
+}
+.cards-services {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.cards-services__card {
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 0px 12px;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 44px;
+    transition-duration: 500ms;
+    min-width: 300px;
+}
+
+.cards-services__card:hover {
+    filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+} 
+
+.cards-services__ico {
+    width: 63px;
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 0 0 63px;
+}
+.cards-services__title {
+    margin-bottom: 20px;
+}
+
+.cards-services__text {
+    text-align: center;
+    flex: 1 1 auto;
+    
+}
+.our-services__button {
+    align-self: center;
+    margin-top: 66px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F2726F;
+    padding: 9px 24px;
+    border-radius: 8px;
+}
+
+.cards-services__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+.cards-services__link {
+    align-self: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F2726F;
+    padding: 9px 24px;
+    border-radius: 8px;
+}
+
+
+
+/* ================================== our-impact  */
+
+.our-impact {
+    background: #29C3BE;
+    padding: 112px 0px 112px 0px;
+    position: relative;
+}
+.our-impact__container {
+    position: relative;
+    /* background: url(../img/main/our-impact/blob-green.png) 120px 0  no-repeat; */
+}
+
+.our-impact::before{
+    content: "";
+    background: url(../img/main/our-impact/blob-green.png) 0 0 / 100% no-repeat;
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 50%;
+    transform: translate(88%, 0);
+    width: 52%;
+    height: 100%;
+
+
+
+    /* z-index: 0; */
+}
+
+.our-impact__body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -15px;
+}
+
+.our-impact__content {
+    flex: 0 1 50%;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.our-impact__image {
+    flex: 0 1 50%;
+    padding: 0 15px;
+}
+
+.our-impact__image img {
+    max-width: 100%;
+    margin-top: -40%;
+    border-radius: 40px;
+}
+
+.our-impact__content:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+
+/* .our-impact__container::after{
+    content: "";
+    background: url(../img/main/our-impact/dog2.png) 0 0 no-repeat;
+    width: 498px;
+    height: 315px;
+    position: absolute;
+    top: -80px;
+    right: 210px;
+    border-radius: 40px;
+    z-index: 0; 
+} */
+
+.our-impact__subtitle {
+}
+
+.our-impact__title {
+    max-width: 411px;
+}
+
+.our-impact__image {
+
+}
+
+.our-impact__numbers {
+}
+
+/* ================================== row-numbers  */
+
+.row-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    background-color: #29C3BE;
+    align-items: flex-start;
+    margin: 0px -12px;
+}
+
+.row-numbers__puppy,.row-numbers__dogs,.row-numbers__pups,.row-numbers__meals {
+    padding: 0 12px 0 102px;
+    position: relative;
+    flex: 0 1 25%;
+    max-width: 261px;
+}
+
+.row-numbers__puppy::before {
+    content: "";
+    background: url(../img/main/row-numbers/dog_duckling_24x.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+    .row-numbers__dogs::before {
+    content: "";
+    background: url(../img/main/row-numbers/dog_house_24px.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+.row-numbers__pups::before {
+    content: "";
+    background: url(../img/main/row-numbers/dog_leash_24x.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.row-numbers__meals::before {
+    content: "";
+    background: url(../img/main/row-numbers/dog_food_bowl_24x.png) 0 0 no-repeat;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+
+.row-numbers__number {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+    margin: 5px 0px;
+}
+.row-numbers__text {
+    color: #5D62B5;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.footer {
+}
