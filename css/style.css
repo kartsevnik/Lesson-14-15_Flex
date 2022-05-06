@@ -107,18 +107,27 @@ body {
 /* ================================== who-we-are  */
 
 .who-we-are {
-}
-
-.who-we-are__container {
-    position: relative;
-    padding: 100px 87px 300px 87px;
-    background-color: #5D62B5;
-    margin: -180px auto 54px auto;
-    border-radius: 40px;
     color: #F5F5F5;
 }
 
-.who-we-are__container:after {
+.who-we-are_margin {
+    margin: -180px auto 54px auto;
+}
+
+.who-we-are__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #5D62B5;
+    border-radius: 40px;
+    
+}
+
+.who-we-are__body {
+    padding: 100px 87px 300px 87px;
+    position: relative;
+}
+
+.who-we-are__body:after {
     content: "";
     position: absolute;
     background: url(../img/main/who-we-are/blob2.png) 0 0 no-repeat;
@@ -129,7 +138,7 @@ body {
     object-fit: cover;
 }
 
-.who-we-are__container:before {
+.who-we-are__body:before {
     content: "";
     position: absolute;
     background: url(../img/main/who-we-are/circles.png) 0 0 no-repeat;
@@ -140,12 +149,31 @@ body {
 }
 
 .who-we-are__subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    line-height: 24px;
+    text-transform: uppercase;
     margin-bottom: 33px;
     position: relative;
+    padding-left: 35px;
 }
 
+.who-we-are__subtitle::before {
+    content: "";
+    background: url(../img/main/who-we-are/mark.png) 0 0 no-repeat;
+    width: 28px;
+    height: 27px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+}
 .who-we-are__title {
     max-width: 583px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
     color: #FFFFFF;
     margin-bottom: 36px;
 }
@@ -161,10 +189,12 @@ body {
     position: relative;
     max-width: 846px;
     border-radius: 40px;
-    margin: -350px auto 0 auto;
     overflow: hidden;
     box-shadow: 0px 16px 24px 0px #26262633, 0px 8px 16px 0px #2626263d;
-    margin-bottom: 20px;
+}
+
+.image-dog_margin {
+    margin: -350px auto 0 auto;
 }
 
 .image-dog__picture {
